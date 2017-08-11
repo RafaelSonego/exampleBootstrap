@@ -209,7 +209,8 @@
 			<!-- Criando modal e paginaçao -->
 			<footer class="row">
 				<div class="col-sm-6">
-					<button class="btn btn-primary"> New Project</button>
+					<!-- no toogle fala que será um modal e o target é informando o id do modal -->
+					<button class="btn btn-primary" data-toggle="modal" data-target="#newProjectModal"> New Project</button>
 				</div>
 				<div class="col-sm-6 text-right pagination__format">
 					<ul class="pagination">
@@ -223,7 +224,101 @@
 					</ul>
 				</div>
 			</footer>
+		</div>
 
+		<!-- Modal -->
+		<!-- informamos que a div será um modal e Fade é o efeito quando o modal aparecer -->
+		<div class="modal fade" id="newProjectModal">
+			<div class="modal-dialog">
+				<!-- COnteudo do modal - possui 3 partes, header, body e footer separados por linha -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" data-dismiss="modal" class="close">
+							<span>&times;</span>
+						</button>
+						<h4 class="modal-title">New Project</h4>
+					</div>
+					<!-- body e footer fica dentro de um form para poder fazer as requisicoes -->
+					<form>
+						<!-- Corpo -->
+						<div class="modal-body">
+							<!-- Criando alertas -->
+							<div class="alert alert-danger">
+								<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+								Error!
+							</div>
+							<div class="alert alert-success">
+								<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+								Success!
+							</div>
+							<div class="alert alert-warning">
+								<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+								Warning!
+							</div>
+							<div class="alert alert-info">
+								<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+								Info!
+							</div>
+
+							<!-- Primeira linha -->
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<label class="control-label">Value</label>
+									<p class="form-control-static"> 123456</p>
+								</div>
+							</div>
+							<!-- Segunda linha com dois campos select -->
+							<div class="row">
+								<div class="form-group col-sm-5">
+									<label class="control-label" for="selectClient">Client</label>
+									<select class="form-control" id="selectClient">
+										<option value="">Select..</option>
+										<option value="Option Value">Option Value</option>
+										<option value="Option Value">Option Value</option>
+										<option value="Option Value">Option Value</option>
+										<option value="Option Value">Option Value</option>
+										<option value="Option Value">Option Value</option>
+									</select>
+								</div>
+								<div class="form-group col-sm-7 has-warning">
+									<label class="control-label" for="selectService">Client</label>
+									<select class="form-control" id="selectService">
+										<option value="">Select..</option>
+										<option value="Service Value">Service Value</option>
+										<option value="Service Value">Service Value</option>
+										<option value="Service Value">Service Value</option>
+										<option value="Service Value">Service Value</option>
+										<option value="Service Value">Service Value</option>
+									</select>
+								</div>
+							</div>
+							<!-- Terceira linha com o textarea-->
+							<div class="row">
+								<div class="form-group col-xs-12 has-error">
+									<label class="control-label" for="filedText">Note</label>
+									<textarea class="form-control" rows="3" id="filedText"></textarea>
+								</div>
+							</div>							
+							<!-- Quarta linha com o campo valor agrupando a um icone-->
+							<div class="row">
+								<div class="form-group col-sm-4 has-success">
+									<label class="control-label" for="value">Value</label>
+									<!-- informa que sera agrumado o icone com o text -->
+									<div class="input-group">
+										<div class="input-group-addon">CAD$</div>	
+										<input type="text" name="value" id="value" class="form-control">
+									</div>
+								</div>
+							</div>
+
+						</div>					
+						<div class="modal-footer">
+							<button type="reset" class="btn btn-danger">Reset</button>
+							<button type="submit" class="btn btn-primary">OK</button>
+						</div>
+					</form>
+				</div>	
+			</div>
 		</div>
 
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
