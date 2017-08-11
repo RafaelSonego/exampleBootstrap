@@ -1,12 +1,30 @@
-body{
-	min-height: 100vh; /*Utiliza 100% da tela*/
-	background-color: #CCC; /*Cor cinza*/
-	/*background-image: url('https://unsplash.it/g/1500/800?random');*/ /*Utiliza imagem aleatória*/
+body {
+	min-height: 100vh;
+	background-color: #FFF;
 }
 
-.login-form{
-	height: 300px; /*Altura da div de login*/
-	background-color: #FFF; /*Cor branca*/
-	margin-top: 50vh; /*Coloca de margem superior, 50% do tamanho total da tela*/
-	transform: translateY(-50%); /*Traduz a posicao vertical para a metade do que tiver*/
+.login-form {
+	margin-top: 50vh;
+	padding: 20px 30px;
+	background-color: #808080;
+	color: #FFF;
+
+	transform: translateY(-50%);
 }
+
+.login-form h1 {
+	margin: 0 0 5px;
+}
+
+.login-form h2 {
+	margin: 0 0 30px;
+	font-size: 1em;
+}
+
+.login-form h1 img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
