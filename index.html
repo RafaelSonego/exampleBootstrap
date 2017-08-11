@@ -7,7 +7,8 @@
 		<title>Rafael Sonego da Silva</title>
 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		
 	</head>
 	<!--
 		bootstrap grid - 12 columns
@@ -20,8 +21,31 @@
 		col-md-offset-NUMERO Define quantas posicoes vazias ir'a utilizar no grid
 	-->
 	<body>
+		<!-- Criando um navbar com bootstrap -->
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="login.html" class="navbar-brand logo-tipo">
+						<img src="img/rafael.jpg" alt="Logo Rafael Sonego">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li><a href="about.html">About</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="https://www.linkedin.com/in/rafaelsonego/" target="_blank">Linkedin</a></li>
+						<li><a href="https://github.com/RafaelSonego" target="_blank">Github</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 	</body>
 </html>
