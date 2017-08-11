@@ -7,3 +7,28 @@
 	height: 30px;
 }
 
+.profile {
+	padding: 10px;
+}
+
+.profile li:first-child {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+	.profile {
+		color: #FFF;
+	}
+	.profile a{
+		color: #9d9d9d;
+		display: block;
+		padding: 5px 0;
+	}
+
+	.profile a:hover {
+		text-decoration: none;
+		color: #FFF;
+	}
+}
